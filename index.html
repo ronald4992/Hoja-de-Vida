@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mensaje-bienvenida"></div>
+     <!-- Barra de navegación con un menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div> <!-- Botón de hamburguesa para abrir/cerrar el menú -->
+        <ul class="menu" id="menu"> <!-- Lista de navegación -->
+            <li><a href="#personal">Información Personal</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#redes">Redes</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+        </ul>
+    </nav>
+        <!-- Sección superior con nombre y foto -->
+    <div class="name">
+        <div class="img">
+            <img src="c:\Users\PERSONAL\OneDrive\Documents\Hoja de Vida-CSS-HTML-JS\imagen\foto.jpeg" alt="">
+        </div>
+        <div class="content">
+            <p class="p-1">Ronald Fábian López Castaño</p> <!-- Nombre -->
+            <p class="p-2">28 años, Educación Superior</p> <!-- Edad y nivel educativo -->
+        </div>
+    </div>
+    <!-- Información personal -->
+    <div class="info" id="personal">
+        <p class="tituloseccion">Información Personal</p>
+        <p class="tituloinfo">Nombre y Apellidos:</p>
+        <p class="infoInfo">Ronald Fábian López Castaño</p><br>
+        <p class="tituloinfo">Dirección:</p>
+        <p class="infoInfo">Carrera 98 #2-44 Tintal</p><br>
+        <p class="tituloinfo">Email:</p>
+        <p class="infoInfo">ronald4992@gmail.com</p><br>
+        <p class="tituloinfo">Teléfono:</p>
+        <p class="infoInfo">306 72 28 - (+57)310 235 49 92</p><br>
+        <p class="tituloinfo">Fecha de Nacimiento:</p>
+        <p class="infoInfo">29 de Agosto de 1996</p><br>
+        <p class="tituloinfo">Cédula de Ciudadanía:</p>
+        <p class="infoInfo">1033791382</p><br>
+    </div>
+    <!-- Educación -->
+    <div class="info" id="educacion">
+        <p class="tituloseccion">Educación</p>
+        <p class="tituloinfo">Preescolar:</p>
+        <p class="infoInfo">Liceo Académico Bernini - 02 de Diciembre 2001</p><br>
+        <p class="tituloinfo">Primaria:</p>
+        <p class="infoInfo">Liceo Académico Bernini - 27 de Noviembre 2006</p><br>
+        <p class="tituloinfo">Bachillerato:</p>
+        <p class="infoInfo">Colegio Nacional Restrepo Millán/Liceo Mayor de Palermo - 22 de Noviembre 2013 - Bachiller Técnico</p><br>
+        <p class="tituloinfo">Educación Superior:</p>
+        <p class="infoInfo">Universidad Central: - 17 de Abril 2020 - Ingeniero Industrial</p><br>
+        <p class="infoInfo">Universitaria Uniagustiniana: - Tecnologia de desarrollo de software</p>
+    </div>
+    <!--Curso adicionales realizados-->
+    <div class="info" id="cursos">
+        <p class="tituloseccion">Cursos Adicionales</p>
+        <p class="tituloinfo">Curso:</p>
+        <p class="infoInfo">Prime Institute - 06 de Febrero 2023 - SAP MM Gestión de logística y materiales</p><br>
+        <p class="tituloinfo">Curso:</p>
+        <p class="infoInfo">Prime Institute - 07 de Febrero 2023 - SAP SuccessFactors Gestión del Capital Humano</p><br>
+    </div>
+    <!--Experiencia laboral-->
+    <div class="info" id="experiencia">
+        <p class="tituloseccion">Experiencia Laboral</p>
+        <p class="tituloinfo">Cosenit S.A:</p>
+        <p class="infoInfo">Digitador.</p><br>
+        <p class="tituloinfo">Cosenit S.A:</p>
+        <p class="infoInfo">Ejecución de informes mensuales de usuarios para auditorías internas.</p><br>
+        <p class="tituloinfo">Cosenit S.A:</p>
+        <p class="infoInfo">Verificación de facturas y evaluación de proveedores.</p><br>
+        <p class="tituloinfo">Consultores S.A:</p>
+        <p class="infoInfo">Recepción de pedidos según orden de compras realizadas en el sistema SAP ERP.</p><br>
+    </div>
+    <!--Habilidades adquiridas-->
+    <div class="info" id="habilidades">
+        <p class="tituloseccion">Habilidades</p>
+        <p class="infoInfo">* Procesos de administración de proyectos, métodos, técnicas y herramientas bajo los estándares PMBook.</p><br>
+        <p class="infoInfo">* Dominio de software Microsoft Project.</p><br>
+        <p class="infoInfo">* Certificación en SAP MM & SuccessFactors.</p><br>
+    </div>
+    <!--Redes de busqueda de trabajo-->
+    <div class="info" id="redes">
+        <p class="tituloseccion">Redes</p>
+        <p class="infoInfo"><a href="https://www.linkedin.com/feed/" target="_blank">Linkedin
+            <img src="c:\Users\PERSONAL\OneDrive\Documents\Hoja de Vida-CSS-HTML-JS\imagen\Linkedin.webp" alt="Linkedin" class="icono-redes">
+        </a></p><br>
+        <p class="infoInfo"><a href="https://candidato.co.computrabajo.com/candidate/cv/edit" target="_blank">Computrabajo
+            <img src="c:\Users\PERSONAL\OneDrive\Documents\Hoja de Vida-CSS-HTML-JS\imagen\computrabajo.png" alt="Computrabajo" class="icono-redes">
+        </a></p>
+    </div>
+    <!--Recursos adicionales donde se encontro información necesaria para el desarrollo del trabajo-->
+    <div class="info" id="recursos">
+        <p class="tituloseccion">Recursos Adicionales</p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs</a><br>
+        <a href="https://www.w3schools.com/js/" target="_blank">W3Schools</a><br>
+        <a href="https://www.youtube.com/watch?v=09ebENGpvl0" target="_blank">Hoja de vida</a><br>
+        <a href="https://www.youtube.com/watch?v=W-kZr2X02pA" target="_blank">Botón de Mensaje</a><br>
+        <a href="https://www.youtube.com/watch?v=8JC-XyCSys4" target="_blank">Diseño Responsive</a><br>
+    </div>
+    <!-- Botón interactivo con mensaje dinámico -->
+    <button id="mostrarMensaje">Haz clic aquí</button> <!-- Botón para mostrar un mensaje -->
+        <p id="mensaje"></p>  <!-- Contenedor del mensaje que se mostrará al hacer clic -->
+     <button onclick="cambiarModo()">🌗 Cambiar modo</button>       
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

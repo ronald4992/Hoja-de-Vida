@@ -1,0 +1,319 @@
+/* Estilo base para todo el body */
+body{
+    margin: 0; /* Elimina márgenes predeterminados del navegador */
+    padding: 8px; /* Espacio interno alrededor del contenido del body */
+    background: #6b6868; /* Color de fondo general de la página */
+}
+body {
+    transition: background-color 0.5s, color 0.5s;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+
+  body.modo-claro {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  body.modo-oscuro {
+    background-color: #121212;
+    color: #ffffff;
+  }
+ button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+   
+    #boton-modo {
+    position: fixed;      
+    top: 10px;               
+    right: 10px;             
+    z-index: 1000;           
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#mensaje-bienvenida {
+    font-size: 1.5rem;
+    color: #f1dd22;
+    margin: 20px 0;
+    animation: aparecer 1.5s ease-in-out;
+  }
+}
+  @keyframes aparecer {
+    from {
+      opacity: 0; /* El elemento es completamente transparente */
+      transform: translateY(-10px);  /* Se mueve ligeramente hacia arriba*/
+    }
+    to {
+      opacity: 1; /* El elemento es completamente visible */
+      transform: translateY(0); /* Vuelve a su posición original */
+    }
+  }
+/* Estilo para el menú principal */
+.menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa flexbox para alinear elementos horizontalmente */
+    gap: 15px; /* Espacio entre cada ítem del menú */
+}
+
+/* Estilo para los enlaces dentro del menú */
+.menu li a {
+    background: #427AA1; /* Fondo azul */
+    text-decoration: none; /* Sin subrayado */
+    color: #fff8f0; /* Texto en color claro */
+    font-size: large;
+    border-radius: 30px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de alternar menú (en pantallas pequeñas) */
+.menu-toggle {
+    display: none; /* Oculto por defecto en pantallas grandes */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Reglas para pantallas pequeñas (responsive design) */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú por defecto */
+        flex-direction: column; /* Los ítems se apilan verticalmente */
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .menu.show {
+        display: flex; /* Se muestra cuando tiene clase 'show' */
+    }
+
+    .menu-toggle {
+        display: block; /* Se muestra el botón de menú */
+    }
+}
+
+/* Sección superior con nombre y foto */
+.name {
+    width: 100%;
+    height: 300px;
+    background: #427AA1;
+    transform: skewY(-5deg); /* Inclinación de la caja */
+}
+
+/* Contenido textual dentro de .name */
+.name .content{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%; /* Centrado horizontal */
+}
+
+/* Nombre principal */
+.name .content .p-1{
+    color: #fff8f0;
+    font-weight: bolder;
+    font-size: 65px;
+    transform: skewY(5deg); /* Contrarresta la inclinación */
+    margin-bottom: 0;
+}
+
+/* Subtítulo (edad y nivel educativo) */
+.name .content .p-2{
+    color: #fff8f0;
+    font-size: 35px;
+    transform: skewY(5deg); /* Contrarresta la inclinación */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Estilo para la imagen de perfil */
+.name .img {
+    position: absolute; 
+    top: 25%;
+    right: 8%;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%; /* Imagen circular */
+    transform: skewY(5deg);
+    overflow: hidden; /* Oculta bordes que sobresalgan */
+}
+
+/* Imagen dentro del contenedor circular */
+.name .img img {
+    width: 180px;
+    height: 300px; /* Imagen más alta para buen encuadre */
+}
+
+/* Secciones de información (personal, educación, etc.) */
+.info{
+    width: 90%;
+    height: auto;
+    background: #427AA1;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Título de cada sección */
+.info .tituloseccion {
+    color: #fff8f0;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 3px #fff8f0 dashed; /* Línea decorativa */
+}
+
+/* Subtítulos como "Nombre", "Dirección", etc. */
+.info .tituloinfo {
+    color: #fff8f0;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Información descriptiva */
+.info .infoInfo {
+    color: #f0f3ff;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+/* Enlaces en las secciones de redes o recursos */
+.info a {
+    color: #f0f3ff;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+/* Tamaño de íconos de redes */
+.icono-redes {
+    width: 50px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Botón de interacción al final de la página */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #427AA1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s; /* Transición suave */
+}
+
+/* Efecto hover sobre el botón */
+button:hover {
+    background: #555; /* Cambio de color al pasar el cursor */
+}
+
+/* Mensaje mostrado por el botón interactivo */
+#mensaje {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #f1dd22;
+    font-weight: bold;
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 0.5 ease; /* Animación de opacidad */
+}
+
+/* Estilos responsivos para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .name {
+        height: 250px;
+    }
+
+    .name .content {
+        width: 80%;
+        left: 10%;
+        top: 30%;
+    }
+
+    .name .content .p-1 {
+        font-size: 40px;
+    }
+
+    .name .content .p-2 {
+        font-size: 25px;
+    }
+
+    .name .img {
+        width: 120px;
+        height: 120px;
+        top: 20%;
+        right: 5%;
+    }
+
+    .name .img img {
+        width: 120px;
+        height: 200px;
+    }
+
+    .info {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .info .tituloseccion {
+        font-size: x-large;
+    }
+
+    .info .tituloinfo,
+    .info .infoInfo {
+        font-size: medium;
+    }
+}
+
+/* Estilos aún más reducidos para móviles pequeños */
+@media (max-width: 480px) {
+    .name {
+        height: 200px;
+    }
+
+    .name .content {
+        width: 90%;
+        left: 5%;
+        top: 35%;
+    }
+
+    .name .content .p-1 {
+        font-size: 28px;
+    }
+
+    .name .content .p-2 {
+        font-size: 18px;
+    }
+
+    .name .img {
+        width: 90px;
+        height: 90px;
+        top: 15%;
+        right: 5%;
+    }
+
+    .name .img img {
+        width: 90px;
+        height: 150px;
+    }
+
+    button {
+        width: 100%; /* Botón a ancho completo */
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
